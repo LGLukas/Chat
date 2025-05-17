@@ -1,0 +1,51 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0c1317;
+  color: white;
+}
+.login-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222e35;
+}
+.login-container {
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+}
+button {
+  background: #128c7e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+#chat-interface {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 30%;
+  background: #111b21;
+}
+.chat-area {
+  flex: 1;
+  background: #0b141a;
+  display: flex;
+  flex-direction: column;
+}
+.messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+.message-input {
+  padding: 1rem;
+  background: #222e35;
+  display: flex;
+}

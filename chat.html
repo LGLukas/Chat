@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WhatsApp Clone - Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="chat-interface">
+    <div class="sidebar">
+      <div class="header">
+        <div class="user-profile">
+          <div class="avatar">U</div>
+          <span id="user-email">user@mail.com</span>
+        </div>
+        <div class="actions">
+          <button class="action-btn" onclick="logout()">Logout</button>
+        </div>
+      </div>
+      <div class="search">
+        <div class="search-container">
+          <span class="material-icons">search</span>
+          <input type="text" placeholder="Suchen..."/>
+        </div>
+      </div>
+      <div class="chat-list" id="chat-list">
+        <!-- Chats -->
+      </div>
+    </div>
+    <div class="chat-area">
+      <div class="chat-header">Chat mit <span id="chat-name">...</span></div>
+      <div class="messages" id="messages"></div>
+      <div class="message-input">
+        <input type="text" id="message-input" placeholder="Nachricht schreiben..." />
+        <span class="material-icons" onclick="sendMessage()">send</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
